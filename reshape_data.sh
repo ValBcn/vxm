@@ -1,0 +1,1 @@
+python scripts/resize.py --img_path1 /home/valentin/CapsuleNetworkDetSeg/Segmentation/data_bck/preprocessed/imagesTr/ --img_path2 data_us/preprocessed/imagesTr/ --multi True --reshape 96 --reshaped_path1 reshaped_data/1/ --reshaped_path2 reshaped_data/2/

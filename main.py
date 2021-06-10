@@ -56,7 +56,8 @@ if __name__ == "__main__":
     # loading data
 
     img_path1 = os.path.join(args.img_path1)
-    img_path2 = os.path.join(args.img_path2)
+    if args.multi is True:
+        img_path2 = os.path.join(args.img_path2)
     data = []
     data2 = []
 

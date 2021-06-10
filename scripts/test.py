@@ -50,7 +50,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    img_array = np.load(args.input1,allow_pickle=True)[0]
+    img_array = np.load(args.input1,allow_pickle=True)
     img_array = resize_data(img_array,int(args.reshape/2),args.reshape,args.reshape)
     vol_shape = img_array.shape
     print ('vol shape = ', vol_shape)
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     if args.multi == True:
         img_array2 = np.load(args.input2,allow_pickle=True)[0]
     if args.multi == False:
-        img_array2 = np.load(args.input2)[0]
+        img_array2 = np.load(args.input2)
     img_array2 = resize_data(img_array2,int(args.reshape/2),args.reshape,args.reshape)
     
     img_array2 = np.reshape(img_array2, (1,) + img_array2.shape + (1,))

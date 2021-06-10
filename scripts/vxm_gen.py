@@ -34,7 +34,7 @@ def vxm_data_generator(x_data,y_data, batch_size=32):
         idx1 = np.random.randint(0, x_data.shape[0], size=batch_size)
         moving_images = x_data[idx1, ..., np.newaxis]
         idx2 = np.random.randint(0, y_data.shape[0], size=batch_size)
-        fixed_images = x_data[idx2, ..., np.newaxis]
+        fixed_images = y_data[idx2, ..., np.newaxis]
         inputs = [moving_images, fixed_images]
 
         # prepare outputs (the 'true' moved image):                                                                                                                                    

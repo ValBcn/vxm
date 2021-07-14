@@ -1,1 +1,1 @@
-python scripts/preprocess_img_only.py --dset_path ./data_us/ --output_path ./data_us/
+python scripts/preprocess_img_only.py --dset_path $1 --output_path $2 --label_name $3 
